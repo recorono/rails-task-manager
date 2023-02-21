@@ -1,11 +1,7 @@
-<h1> Your Tasks </h1>
-# <ul>
-#   <% @restaurants.each do |restaurant| %>
-#     <li><%= link_to restaurant.name, restaurant_path(restaurant) %></li>
-#   <% end %>
-# </ul>
+<h1>these are our tasks</h1>
 <ul>
-  <% @task.each do |task| %>
-    <li><%= @task</li>
-  <% end %>
+<% @task.each do |task| %>
+<li><%= link_to task.title, task_path(task.id)%>
+</li>
+<%end%>
 </ul>
